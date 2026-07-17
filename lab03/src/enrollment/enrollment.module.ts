@@ -1,15 +1,14 @@
-import { Module } from '@nestjs/common';
+import { Module, forwardRef } from '@nestjs/common';
 import { EnrollmentController } from './enrollment.controller';
 import { EnrollmentService } from './enrollment.service';
-<<<<<<< HEAD
+import { CourseModule } from '../course/course.module';
+import { NotificationModule } from '../notification/notification.module';
 
 @Module({
-=======
-import { CourseModule } from '../course/course.module';
-@Module({
   imports: [CourseModule],
->>>>>>> lab-task-03
+
   controllers: [EnrollmentController],
-  providers: [EnrollmentService]
+  providers: [EnrollmentService],
+  exports: [EnrollmentService],
 })
 export class EnrollmentModule {}

@@ -6,7 +6,11 @@ import { EnrollmentModule } from './enrollment/enrollment.module';
 import { NotificationModule } from './notification/notification.module';
 
 @Module({
-  imports: [CourseModule, EnrollmentModule, NotificationModule],
+  imports: [
+    CourseModule,
+    EnrollmentModule,
+    NotificationModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
