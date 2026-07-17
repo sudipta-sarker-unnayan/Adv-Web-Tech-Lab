@@ -1,4 +1,4 @@
-import { forwardRef, Inject, Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { CourseService } from '../course/course.service';
 import { NotificationService } from '../notification/notification.service';
 
@@ -34,3 +34,4 @@ export class EnrollmentService {
     };
   }
 }
+

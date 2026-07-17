@@ -5,10 +5,8 @@ import { CourseModule } from '../course/course.module';
 import { NotificationModule } from '../notification/notification.module';
 
 @Module({
-  imports: [
-    CourseModule,
-    forwardRef(() => NotificationModule),
-  ],
+  imports: [CourseModule],
+
   controllers: [EnrollmentController],
   providers: [EnrollmentService],
   exports: [EnrollmentService],

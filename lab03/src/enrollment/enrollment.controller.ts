@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+import { Controller } from '@nestjs/common';
+
+@Controller('enrollment')
+export class EnrollmentController {}
+=======
 import { Body,Controller,Get,Post } from '@nestjs/common';
 import { EnrollmentService } from './enrollment.service';
 
@@ -18,3 +24,4 @@ export class EnrollmentController {
     return this.enrollmentService.enrollStudent(studentName, courseId);
   }
 }
+>>>>>>> lab-task-03
